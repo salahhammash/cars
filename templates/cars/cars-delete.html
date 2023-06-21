@@ -7,5 +7,7 @@
   {% csrf_token %}
   <p>Do you really want to delete "{{ car.name }}"?</p>
   <input type="submit" value="OK">
+  <button><a href="{% url 'cars_list' %}">Cancel</a></button>
+
 </form>
 {% endblock content %}

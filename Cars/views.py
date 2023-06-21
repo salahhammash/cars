@@ -14,6 +14,7 @@ from .models import Car
 class CarListView(ListView):
     template_name = "cars/cars-list.html"
     model = Car
+    context_object_name = "Car"
 
 
 class CarDetailView(DetailView):

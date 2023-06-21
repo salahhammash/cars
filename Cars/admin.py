@@ -14,7 +14,7 @@ class CustomCarsAdmin(admin.ModelAdmin):
             'fields':('purchaser',
             )}
         ),
-        ('snack info',{
+        ('Cars info',{
             'fields':('name','desc','price'
             )}
         )
