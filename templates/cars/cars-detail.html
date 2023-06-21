@@ -1,0 +1,12 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+<h2>Details about {{ car.name }}</h2>
+<!-- <h2>Purchaser: {{ car.purchaser.first_name }} {{ car.purchaser.last_name }}</h2> -->
+<p>{{ car.desc }}</p>
+<a href="{% url 'cars_update' car.pk %}">+ Update snack</a>
+<a href="{% url 'cars_delete' car.pk %}">+ Delete snack</a>
+
+{% endblock content %}
+

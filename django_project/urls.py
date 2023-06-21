@@ -6,6 +6,8 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/", include("allauth.urls")),
     path("", include("pages.urls")),
+    path("", include("Cars.urls")),
+    
 ]
 
 if settings.DEBUG:
@@ -13,4 +15,5 @@ if settings.DEBUG:
 
     urlpatterns = [
         path("__debug__/", include(debug_toolbar.urls)),
+        
     ] + urlpatterns
